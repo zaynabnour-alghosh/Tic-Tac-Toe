@@ -81,3 +81,9 @@ function playerHasWon() {
     }   
     return false  
 }
+
+function applyStrikeThrough(cellsToStrike) {
+    for (let index of cellsToStrike) {
+      boxes[index].classList.add('strike-through');
+    }
+  }
