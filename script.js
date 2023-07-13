@@ -31,3 +31,31 @@ function go() {
 //     console.log(player2.value)
 // }
 }
+
+function boxClicked(e){
+    const id=e.target.id
+    if (!arr[id]){         //if the array doesnt include this id, it hasnt been clicked yet in anyone's turn
+        arr[id]=currentPlayer
+        e.target.innerText=currentPlayer
+        if (playerHasWon()!==false){
+            if (currentPlayer=='X'){
+                winner=player1.value
+                scorePlayer1+=1
+            }
+            else if (currentPlayer=='O'){
+                winner=player2.value
+                scorePlayer2+=1
+            }
+            playerT.innerHTML=winner+ ' has won!'
+            applyStrikeThrough(playerHasWon());
+        }  
+        if(currentPlayer=='X'){
+            currentPlayer='O'
+        }
+        else if(currentPlayer=='O'){
+            currentPlayer='X'
+         }
+    }
+    s1.innerHTML=scorePlayer1
+    s2.innerHTML=scorePlayer2    
+}
