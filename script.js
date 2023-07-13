@@ -69,3 +69,15 @@ const winningCombos = [
     [0,4,8],
     [2,4,6]
 ]
+
+function playerHasWon() {
+    for (const condition of winningCombos) {
+        let [a, b, c] = condition
+        if(arr[a] && (arr[a] == arr[b] && arr[a] == arr[c])) {
+            playerT.textContent=winner+' has won!'
+            playerT.style.display='block'
+            return [a,b,c]
+        }       
+    }   
+    return false  
+}
