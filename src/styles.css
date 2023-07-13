@@ -1,0 +1,86 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(133, 177, 163);
+    height: 100%
+}
+.row{
+    display: flex;
+    flex-direction: row;  
+}
+.input{
+    flex:1;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    padding-top:10px;
+    align-items: center;
+}
+#gameboard {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(111, 111, 198);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    cursor: pointer;
+}
+.score{
+    display: flex;
+       flex-direction: column;
+    align-items: center;
+}
+.srow{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row; 
+    gap: 150px; 
+}
+#P1-disabled{
+    display: none;
+}
+#P2-disabled{
+    display: none;
+}
+#restart{
+    margin-top: 20px;
+    padding: 10px;
+    color: beige;
+    background-color: black;
+}
+.brow{
+    display: flex;
+    flex-direction: row; 
+    gap: 150px; 
+}
+.strike-through {
+    text-decoration: line-through;
+  }
+#go{
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: beige;
+    background-color: black;
+    width:100px;
+    margin-top: 10px;
+}
+#playAgain{
+    margin-top: 20px;
+    padding: 10px;
+    color: beige;
+    background-color: black;
+}
