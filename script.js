@@ -87,3 +87,18 @@ function applyStrikeThrough(cellsToStrike) {
       boxes[index].classList.add('strike-through');
     }
   }
+
+btn_PlayAgain.addEventListener('click',playAgain)
+function playAgain(){
+    playerT.style.display='none'
+    span_p1.style.display="block"
+    span_p2.style.display="block"
+    arr.fill('')
+    for(let i=0; i<boxes.length;i++){
+        boxes[i].innerText=''
+        boxes[i].classList.remove('strike-through');
+    }    
+    s1.innerText=scorePlayer1
+    s2.innerText=scorePlayer2    
+    }
+  
